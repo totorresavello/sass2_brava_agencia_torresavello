@@ -1,0 +1,28 @@
+.txt{
+    font-size: 25px;
+}
+.gridMain{
+	display: grid;
+	grid-template-areas: 
+	"encabezado encabezado"
+	"imgMain txtMain";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+}
+.encabezado{grid-area: encabezado; display: flex; flex-direction: column;}
+.imgMain{grid-area: imgMain;}
+.txtMain{grid-area: txtMain; padding: 50px;}
+.gridListaMain{
+    display: flex;
+    justify-content: center;
+}
+.gridListaMain{
+    display: grid;
+    grid-template-areas:
+    "primer segundo tercero";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 106px ;
+}
+.primer{grid-area: primer; display: flex; justify-content: center; @extend .txt;}
+.segundo{grid-area: segundo;  display: flex; justify-content: center; @extend .txt;}
+.tercero{grid-area: tercero;  display: flex; justify-content: center; @extend .txt;}

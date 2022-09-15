@@ -1,0 +1,21 @@
+.gridMainPort{
+    display: grid;
+    grid-template-areas: 
+    "portafolio"
+    "nombre"
+    "imgPort"
+    "texto"
+    "nombre2"
+    "imgPort2"
+    "texto2"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+.portafolio{grid-area: portafolio;}
+.nombre{grid-area: nombre; display: flex; justify-content: center; font-size: 25px;}
+.imgPort{grid-area: imgPort;  align-self: center; justify-self: center;}
+.texto{grid-area: texto;  display: flex; flex-wrap: wrap; font-size: 25px;}
+.nombre2{grid-area: nombre2; @extend .nombre;}
+.imgPort2{grid-area: imgPort2; @extend .imgPort;}
+.texto2{grid-area: texto2; @extend .texto;}

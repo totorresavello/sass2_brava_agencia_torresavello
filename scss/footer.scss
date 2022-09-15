@@ -1,0 +1,15 @@
+footer{
+    border-top: solid 1px #0068D6;
+    a{
+        text-decoration: none;
+        
+    }
+    ul{display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        li{
+            list-style-type: none;
+            font-weight: bold;
+        }
+    }
+}

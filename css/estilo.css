@@ -1,0 +1,121 @@
+body {
+  background: #00416b;
+  background: linear-gradient(90deg, rgba(0, 65, 107, 0.613883) 1%, rgba(9, 115, 121, 0.60548) 51%, #00fff8 92%); }
+
+header {
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto; }
+  header div {
+    padding-top: 50px; }
+    header div .translateY {
+      transition: all 1s; }
+    header div .translateY:hover {
+      transform: translateY(-20px); }
+  header nav {
+    padding-top: 50px; }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px; }
+    header ul li {
+      color: black;
+      list-style-type: none;
+      font-weight: bold; }
+
+a {
+  text-decoration: none; }
+
+.txt, .primer, .segundo, .tercero {
+  font-size: 25px; }
+
+.gridMain {
+  display: grid;
+  grid-template-areas: "encabezado encabezado" "imgMain txtMain";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; }
+
+.encabezado {
+  grid-area: encabezado;
+  display: flex;
+  flex-direction: column; }
+
+.imgMain {
+  grid-area: imgMain; }
+
+.txtMain {
+  grid-area: txtMain;
+  padding: 50px; }
+
+.gridListaMain {
+  display: flex;
+  justify-content: center; }
+
+.gridListaMain {
+  display: grid;
+  grid-template-areas: "primer segundo tercero";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 106px; }
+
+.primer {
+  grid-area: primer;
+  display: flex;
+  justify-content: center; }
+
+.segundo {
+  grid-area: segundo;
+  display: flex;
+  justify-content: center; }
+
+.tercero {
+  grid-area: tercero;
+  display: flex;
+  justify-content: center; }
+
+footer {
+  border-top: solid 1px #0068D6; }
+  footer a {
+    text-decoration: none; }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px; }
+    footer ul li {
+      list-style-type: none;
+      font-weight: bold; }
+
+.gridMainPort {
+  display: grid;
+  grid-template-areas: "portafolio" "nombre" "imgPort" "texto" "nombre2" "imgPort2" "texto2";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto; }
+
+.portafolio {
+  grid-area: portafolio; }
+
+.nombre, .nombre2 {
+  grid-area: nombre;
+  display: flex;
+  justify-content: center;
+  font-size: 25px; }
+
+.imgPort, .imgPort2 {
+  grid-area: imgPort;
+  align-self: center;
+  justify-self: center; }
+
+.texto, .texto2 {
+  grid-area: texto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px; }
+
+.nombre2 {
+  grid-area: nombre2; }
+
+.imgPort2 {
+  grid-area: imgPort2; }
+
+.texto2 {
+  grid-area: texto2; }
